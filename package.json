@@ -1,0 +1,37 @@
+{
+  "name": "github-to-crowdin",
+  "version": "1.0.0",
+  "description": "Updates your files on Crowdin whenever you push to a certain branch on GitHub",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start-dev": "nodemon --exec node -r dotenv/config index.js",
+    "test": "standard",
+    "fix": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SwitchbladeBot/github-to-crowdin.git"
+  },
+  "keywords": [
+    "crowdin",
+    "github",
+    "webhook"
+  ],
+  "author": "Switchblade Project (@SwitchbladeBot)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SwitchbladeBot/github-to-crowdin/issues"
+  },
+  "homepage": "https://github.com/SwitchbladeBot/github-to-crowdin#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-github-webhook": "^1.0.6"
+  },
+  "devDependencies": {
+    "dotenv": "^6.0.0",
+    "nodemon": "^1.17.5",
+    "standard": "^11.0.1"
+  }
+}
