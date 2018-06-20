@@ -1,0 +1,16 @@
+{
+  "name": "Github to Crowdin",
+  "description": "Webhook that updates your files on Crowdin whenever you push to a certain branch",
+  "repository": "https://github.com/SwitchbladeBot/github-to-crowdin",
+  "logo": "https://pbs.twimg.com/profile_images/821985679769030656/tGUepzTM_400x400.jpg",
+  "keywords": ["crowdin", "webhook", "github"],
+  "env": {
+    "WEBHOOK_SECRET": {
+      "description": "Secret string used to verify the authenticity of received requests",
+      "generator": "secret"
+    },
+    "REPOSITORY_NAME": {
+      "description": "Name of the GitHub repository to expect events from"
+    }
+  }
+}
