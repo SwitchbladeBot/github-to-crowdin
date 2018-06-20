@@ -6,11 +6,11 @@
   "keywords": ["crowdin", "webhook", "github"],
   "env": {
     "WEBHOOK_SECRET": {
-      "description": "Secret string used to verify the authenticity of received requests",
+      "description": "Secret string used to verify the authenticity of requests",
       "generator": "secret"
     },
     "REPOSITORY_NAME": {
-      "description": "Name of the GitHub repository to expect events from"
+      "description": "Name of the GitHub repository to expect pushes from"
     }
   }
 }
